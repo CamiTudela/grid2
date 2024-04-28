@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 10% auto auto 10%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-family: initial;
+    font-size: x-large;
+}
+
+aside {
+    grid-area: aside;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    display: flex;
+}
+
+main {
+    grid-area: main;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 150%;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 25px;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+ul li{
+    list-style: none;
+    line-height: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+.card{
+    height: 300px;
+    width: 310px;
+    border: 3px solid #eb075e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card img{
+    height: 90%;
+    width: 95%;
+
+}
+
+.card  button{
+    width: 50%;
+    padding: 2%;
+    background-color: white;
+    color: #eb075e;
+    font-size: medium;
+}
